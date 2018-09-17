@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jabzazad/140390quize1/issues"
   },
-  "homepage": "https://github.com/jabzazad/140390quize1#readme"
+  "homepage": "https://github.com/jabzazad/140390quize1#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express.js": "^1.0.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.4"
+  }
 }
