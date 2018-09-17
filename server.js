@@ -14,16 +14,14 @@ app.get('/students',function(req,res){
         password : 'abc123**',
         database : 'db140390'
       });
-    
     connection.connect()
     connection.query('SELECT * FROM students', function(err, rows, fields) {  
         if (err) throw err
             res.render('pages/students', {students : rows}); 
-            
-
     })
     connection.end()
 });
+
 app.get('/subjects',function(req,res){
     var connection = mysql.createConnection({
         host     : 'www.db4free.net',
@@ -38,5 +36,4 @@ app.get('/subjects',function(req,res){
     })
     connection.end()
 });
-
 app.listen(4000);

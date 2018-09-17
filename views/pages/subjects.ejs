@@ -2,19 +2,19 @@
 <table class="table">
     <thead>
         <tr>
-            <th>ID</th>
+            <th>Code</th>
             <th>Title</th>
-            <th>Firstname</th>
-            <th>Lastname</th>
+            <th>Credits</th>
+            <th>Sections</th>
         </tr>
     </thead>
     <tbody>
 <% subjects.forEach(function(subject){%>
         <tr>
-            <td scope="row"><%=subject.sid%></td>
+            <td scope="row"><%=subject.code%></td>
             <td><%=subject.title%></td>
-            <td><%=subject.firstname%></td>
-            <td><%=subject.lastname%></td>
+            <td><%=subject.credits%></td>
+            <td><%=subject.sections%></td>
         </tr>
 <% }); %>
     </tbody>
